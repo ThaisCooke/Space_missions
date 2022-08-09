@@ -1,2 +1,29 @@
 -- Finding out which was the First Space Mission and Most Recent One:
 
+
+-- First Space Mission:
+
+SELECT TOP 1 Mission, Company, CONVERT(DATE,[Date]) AS only_date, MissionStatus
+  FROM space_missions
+  GROUP BY Mission, company, date, MissionStatus
+  ORDER BY date ASC
+  
+  --Most Recent Mission:
+  
+  SELECT TOP 1 Mission, Company, CONVERT(DATE,[Date]) AS only_date, MissionStatus
+  FROM space_missions
+  GROUP BY Mission, company, date, MissionStatus
+  ORDER BY date DESC
+  
+  
+ -- Which Company had the most Space Missions (Top 10):
+ 
+SELECT TOP 10 Company, COUNT (Company) AS number_of_missions
+  FROM space_missions
+  GROUP BY company
+  ORDER BY number_of_missions DESC
+  
+  
+
+ 
+ 
