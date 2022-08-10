@@ -24,6 +24,34 @@ SELECT TOP 10 Company, COUNT (Company) AS number_of_missions
   ORDER BY number_of_missions DESC
   
   
+-- Which Location had the most launches (Top 10):
 
+SELECT TOP 10 Location, COUNT (location) AS number_of_launches
+  FROM space_missions
+  GROUP BY location
+  ORDER BY number_of_launches DESC
+  
+ 
+ -- Number and percentage of Active and Retired Rockets:
+ 
+ --Number
+ SELECT RocketStatus, COUNT (RocketStatus) AS number_of_rockets
+  FROM space_missions
+  GROUP BY RocketStatus 
+
+--Percentage
+  SELECT RocketStatus,
+ round( count(*) * 100.0 / (SELECT count(*) FROM space_missions) , 1) AS percentage_active_and_retired
+ FROM space_missions
+ GROUP BY RocketStatus
+ 
+ 
+ -- Time of the day that had most launches:
+ 
+ SELECT TOP 5 CONVERT(time,[time]) AS only_time, COUNT (CONVERT(time,[time])) AS time_of_the_day
+ FROM space_missions
+ WHERE time IS NOT NULL
+ GROUP BY time
+ ORDER BY time_of_the_day DESC
  
  
