@@ -55,3 +55,31 @@ SELECT TOP 10 Location, COUNT (location) AS number_of_launches
  ORDER BY time_of_the_day DESC
  
  
+ -- Time in history that had the most Missions: (GO BACK TO THIS ONE)
+ 
+ SELECT CONVERT (date, [date]) AS only_date,
+ CASE
+ WHEN date >= '1957-10-04' AND date <= '1959-11-26' THEN '50s'
+ WHEN date >= '1960-02-04' AND date <= '1969-12-27' THEN '60s'
+ WHEN date >= '1970-01-09' AND date <= '1979-12-24' THEN '70s'
+  WHEN date >= '1980-01-11' AND date <= '1989-12-27' THEN '80s'
+   WHEN date >= '1990-01-01' AND date <= '1999-12-31' THEN '90s'
+   WHEN date >= '2000-01-21' AND date <= '2009-12-18' THEN '00s'
+   WHEN date >= '2010-02-03' AND date <= '2019-12-27' THEN '2010s'
+ ELSE '2020s'
+ END AS 'Decades'
+ FROM space_missions
+
+
+SELECT 
+ SUM(CASE WHEN date >= '1957-10-04' AND date <= '1959-11-26' THEN 1 END) AS 50s,
+ SUM (CASE WHEN date >= '1960-02-04' AND date <= '1969-12-27' THEN 1 END) AS 60s,
+ SUM (CASE WHEN date >= '1970-01-09' AND date <= '1979-12-24' THEN 1 END) AS 70s,
+  SUM (CASE WHEN date >= '1980-01-11' AND date <= '1989-12-27' THEN 1 END) AS 80s,
+  SUM (CASE WHEN date >= '1990-01-01' AND date <= '1999-12-31' THEN 1 END) AS 90s,
+   SUM (CASE WHEN date >= '2000-01-21' AND date <= '2009-12-18' THEN 1 END) AS 00s,
+   SUM (CASE WHEN date >= '2010-02-03' AND date <= '2019-12-27' THEN 1 END) AS 2010s,
+ SUM (CASE WHEN date >= '2020-01-07' AND date <= '2022-07-29' THEN 1 END) AS 2020s
+ END AS 'Decades'
+ FROM space_missions
+ 
