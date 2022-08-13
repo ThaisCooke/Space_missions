@@ -92,3 +92,20 @@ SELECT Decades, COUNT (Mission) AS number_of_missions
   SELECT MissionStatus, COUNT (Mission) AS number_of_missions
   FROM space_missions
   GROUP BY  MissionStatus
+
+
+-- Top 10 companies that spent the most money in Space Missions (in millions of dollars):
+-- This was done using the data available, a lot of companies didn't have data for this field.
+
+SELECT DISTINCT TOP 10 Company, SUM (TRY_CAST (price as bigint)) AS total_price
+FROM space_missions
+GROUP BY company
+ORDER BY 2 DESC, 1
+
+
+--Rockets that were the most used in history:
+
+SELECT DISTINCT TOP 5 Rocket, COUNT (Rocket) AS times_used
+FROM space_missions
+GROUP BY Rocket
+ORDER BY times_used DESC
