@@ -55,7 +55,7 @@ SELECT TOP 10 Location, COUNT (location) AS number_of_launches
  ORDER BY time_of_the_day DESC
  
  
- -- Time in history that had the most Missions: (GO BACK TO THIS ONE)
+ -- Time in history that had the most Missions: 
  
  -- First, I altered the table to add a columns with which decades the launches occurred:
  
