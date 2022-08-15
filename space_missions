@@ -48,11 +48,11 @@ SELECT TOP 10 Location, COUNT (location) AS number_of_launches
  
  -- Time of the day that had most launches:
  
- SELECT TOP 5 CONVERT(time,[time]) AS only_time, COUNT (CONVERT(time,[time])) AS time_of_the_day
+ SELECT TOP 5 CONVERT(time,[time]) AS only_time, COUNT (CONVERT(time,[time])) AS number_of_launches
  FROM space_missions
  WHERE time IS NOT NULL
  GROUP BY time
- ORDER BY time_of_the_day DESC
+ ORDER BY number_of_launches DESC
  
  
  -- Time in history that had the most Missions: 
