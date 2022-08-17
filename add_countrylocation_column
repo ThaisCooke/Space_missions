@@ -1,0 +1,88 @@
+--This code was done to add which country each rocket was launched from
+
+ALTER TABLE space_missions
+  ADD Country VARCHAR (50)
+
+ UPDATE space_missions
+ SET Country = 'Kazakhstan'
+ WHERE Location = 'Site 1/5, Baikonur Cosmodrome, Kazakhstan'
+
+ UPDATE space_missions
+ SET Country = 'Algeria'
+ WHERE Location = 'Brigitte, Hammaguir, Algeria, France'
+
+ UPDATE space_missions
+ SET Country = 'United States'
+ WHERE Location = 'LC-18A, Cape Canaveral AFS, Florida, USA' 
+
+ UPDATE space_missions
+ SET Country = 'United States'
+ WHERE Location = 'LC-26A, Cape Canaveral AFS, Florida, USA' 
+
+ UPDATE space_missions
+ SET Country = 'United States'
+ WHERE Location = 'LC-5, Cape Canaveral AFS, Florida, USA' 
+
+ UPDATE space_missions
+ SET Country = 'United States'
+ WHERE Location = 'Douglas F4D Skyray, Naval Air Station Point Mugu, California, USA' 
+
+ UPDATE space_missions
+ SET Country = 'United States'
+ WHERE Location = 'SLC-17A, Cape Canaveral AFS, Florida, USA' 
+
+ UPDATE space_missions
+ SET Country = 'United States'
+ WHERE Location = 'LC-11, Cape Canaveral AFS, Florida, USA' 
+
+
+ UPDATE space_missions
+ SET Country = 'Kazakhstan'
+ WHERE Location = 'Site 31/6, Baikonur Cosmodrome, Kazakhstan' 
+
+ UPDATE space_missions
+ SET Country = 'Kazakhstan'
+ WHERE Location = 'Site 41/15, Baikonur Cosmodrome, Kazakhstan' 
+
+
+ UPDATE space_missions
+ SET Country = 'Kazakhstan'
+ WHERE Location = 'Site 162, Baikonur Cosmodrome, Kazakhstan'
+
+
+ UPDATE space_missions
+ SET Country = 'Kazakhstan'
+ WHERE Location = 'Site 90/19, Baikonur Cosmodrome, Kazakhstan' 
+
+
+ UPDATE space_missions
+ SET Country = 'Kenya'
+ WHERE Location = 'SM Launch Tab, San Marco Launch Platform, Kenya' 
+
+ UPDATE space_missions
+ SET Country = 'Australia'
+ WHERE Location = 'LA-5B, RAAF Woomera Range Complex, Australia' 
+
+ UPDATE space_missions
+ SET Country = 'Kazakhstan'
+ WHERE Location = 'Site 90/20, Baikonur Cosmodrome, Kazakhstan' 
+
+ UPDATE space_missions
+ SET Country = 'China'
+ WHERE Location = 'Site 5020 (LA-2A), Jiuquan Satellite Launch Center, China' 
+
+ UPDATE space_missions
+ SET Country = 'French Guiana'
+ WHERE Location = 'ELD, Guiana Space Centre, French Guiana, France' 
+
+ UPDATE space_missions
+ SET Country = 'China'
+ WHERE Location = 'LC-7, Taiyuan Satellite Launch Center, China' 
+
+ UPDATE space_missions
+ SET Country = 'United States'
+ WHERE Location = 'SLC-17B, Cape Canaveral AFS, Florida, USA' 
+
+ UPDATE space_missions
+ SET Country = 'China'
+ WHERE Location = 'LC-2, Xichang Satellite Launch Center, China' 
