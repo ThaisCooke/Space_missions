@@ -109,3 +109,11 @@ SELECT DISTINCT TOP 5 Rocket, COUNT (Rocket) AS times_used
 FROM space_missions
 GROUP BY Rocket
 ORDER BY times_used DESC
+
+
+-- Number of launches per location:
+
+SELECT Country, COUNT (Country) AS number_of_launches
+ FROM space_missions
+ GROUP BY country
+ ORDER BY number_of_launches DESC
