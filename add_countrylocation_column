@@ -86,3 +86,99 @@ ALTER TABLE space_missions
  UPDATE space_missions
  SET Country = 'China'
  WHERE Location = 'LC-2, Xichang Satellite Launch Center, China' 
+
+UPDATE space_missions
+ SET Country = 'Japan'
+ WHERE Location = 'LP Odyssey, Kiritimati Launch Area, Pacific Ocean' 
+
+ UPDATE space_missions
+ SET Country = 'United States'
+ WHERE Location = 'SLC-6, Vandenberg AFB, California, USA' 
+
+ UPDATE space_missions
+ SET Country = 'French Guiana'
+ WHERE Location = 'ELA-3, Guiana Space Centre, French Guiana, France' 
+
+ UPDATE space_missions
+ SET Country = 'United States'
+ WHERE Location = 'LP-0B, Wallops Flight Facility, Virginia, USA' 
+
+ UPDATE space_missions
+ SET Country = 'Japan'
+ WHERE Location = 'LA-Y1, Tanegashima Space Center, Japan' 
+
+ UPDATE space_missions
+ SET Country = 'Russia'
+ WHERE Location = 'Site 132/1, Plesetsk Cosmodrome, Russia' 
+
+ UPDATE space_missions
+ SET Country = 'India'
+ WHERE Location = 'First Launch Pad, Satish Dhawan Space Centre, India' 
+
+ UPDATE space_missions
+ SET Country = 'India'
+ WHERE Location = 'First Launch Pad, Satish Dhawan Space Centre, India' 
+ 
+ UPDATE space_missions
+ SET Country = 'United States'
+ WHERE Location = 'SLC-2W, Vandenberg AFB, California, USA' 
+
+ UPDATE space_missions
+ SET Country = 'United States'
+ WHERE Location = 'SLC-41, Cape Canaveral AFS, Florida, USA' 
+
+ UPDATE space_missions
+ SET Country = 'United States'
+ WHERE Location = 'Omelek Island, Ronald Reagan Ballistic Missile Defense Test Site, Marshall Islands, USA'
+
+ UPDATE space_missions
+ SET Country = 'Kazakhstan'
+ WHERE Location = 'Site 109/95, Baikonur Cosmodrome, Kazakhstan'
+
+ UPDATE space_missions
+ SET Country = 'India'
+ WHERE Location = 'Second Launch Pad, Satish Dhawan Space Centre, India'
+
+ UPDATE space_missions
+ SET Country = 'United States'
+ WHERE Location = 'Stargazer, Vandenberg AFB, California, USA'
+
+ UPDATE space_missions
+ SET Country = 'China'
+ WHERE Location = 'Site 9401 (SLS-2), Jiuquan Satellite Launch Center, China'
+ 
+  UPDATE space_missions
+ SET Country = 'Russia'
+ WHERE Location = 'Site 370/13, Yasny Cosmodrome, Russia'
+
+ UPDATE space_missions
+ SET Country = 'Kazakhstan'
+ WHERE Location = 'Site 45/1, Baikonur Cosmodrome, Kazakhstan'
+
+ UPDATE space_missions
+ SET Country = 'Russia'
+ WHERE Location = 'Site 16/2, Plesetsk Cosmodrome, Russia'
+
+ UPDATE space_missions
+ SET Country = 'China'
+ WHERE Location = 'LC-3, Xichang Satellite Launch Center, China'
+
+ UPDATE space_missions
+ SET Country = 'United States'
+ WHERE Location = 'SLC-37B, Cape Canaveral AFS, Florida, USA'
+
+ UPDATE space_missions
+ SET Country = 'United States'
+ WHERE Location = 'SLC-3E, Vandenberg AFB, California, USA'
+
+ UPDATE space_missions
+ SET Country = 'United States'
+ WHERE Location = 'Stargazer, Ronald Reagan Ballistic Missile Defense Test Site, Marshall Islands, USA'
+
+ UPDATE space_missions
+ SET Country = 'Russia'
+ WHERE Location = 'Site 133/3, Plesetsk Cosmodrome, Russia'
+
+ UPDATE space_missions
+ SET Country = 'Iran'
+ WHERE Location = 'Imam Khomeini Spaceport, Semnan Space Center, Iran'
