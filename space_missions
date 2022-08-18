@@ -111,7 +111,7 @@ GROUP BY Rocket
 ORDER BY times_used DESC
 
 
--- Number of launches per location:
+-- Number of launches per location (after adding the column "country"):
 
 SELECT Country, COUNT (Country) AS number_of_launches
  FROM space_missions
