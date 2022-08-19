@@ -117,3 +117,10 @@ SELECT country, COUNT (country) AS location_of_missions
   FROM space_missions
   GROUP BY country
   ORDER BY location_of_missions DESC
+
+-- Number of missions per country:
+
+SELECT DISTINCT COUNT (Mission) OVER (PARTITION BY Country) AS number_of_missions, Country
+  FROM space_missions
+  GROUP BY mission, country
+  ORDER BY number_of_missions DESC
